@@ -1,4 +1,4 @@
 box: wercker/default
 build:
   steps:
-    - wercker/shellcheck
+    - wercker/validate-wercker-step
