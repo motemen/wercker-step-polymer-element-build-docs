@@ -1,7 +1,4 @@
-box: ubuntu
+box: wercker/default
 build:
   steps:
-    - script:
-        name: install libgmp-dev
-        code: apt-get install -y libgmp-dev
     - wercker/shellcheck
