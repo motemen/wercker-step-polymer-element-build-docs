@@ -4,7 +4,7 @@ set -e
 
 name=$(node -p -e 'require("./bower.json").name')
 
-out=${WERCKER_POLYMER_ELEMENT_BUILD_DOCS_OUT_DIR-docs}
+out=${WERCKER_POLYMER_ELEMENT_BUILD_DOCS_OUT_DIR:-docs}
 
 rm -rf "$out"
 mkdir -p "$out"
